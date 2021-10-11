@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .align{
+            display: flex;
+            text-align: center;
+        }
+        .player-options img,
+        .enemy-options img{
+            opacity: 0.3;
+            max-width: 200px;
+            cursor: pointer;
+        }
+
+        .player-options,
+        .enemy-options{
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Pedra, Papel e Tesoura!</h1>
+    <h1 id="rounds"></h1>
+
+    <div class="vitorias">
+        <h2>Placar de vitórias: </h2>
+        <h2 id="vitorias">0 X 0</h2>
+    </div>
+    <div class="pontos">
+        <h2>Placar de pontos: </h2>
+        <h2 id="pontos">0 X 0</h2>
+    </div>
+    <h1 id="result">Escolha uma opção!</h1>
+    <div class="align">
+        <div class="player-options">
+            <div><img choice="rock" src="rock.png"></div>
+            <div><img choice="paper" src="paper.png"></div>
+            <div><img choice="scissor" src="scissor.png"></div>
+        </div>
+        <div class="enemy-options">
+            <div><img choice="rock" src="rock.png"></div>
+            <div><img choice="paper" src="paper.png"></div>
+            <div><img choice="scissor" src="scissor.png"></div>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
